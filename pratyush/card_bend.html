@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        *{
+            padding: 0;margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 100px;
+            width: 100%;
+            height: 500vh;
+            background-color: rgb(199, 190, 92);
+        }
+        .container{
+            height: 80%;
+            perspective: 15000000px;
+            width: 20%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* z-index: 10; */
+            border-radius: 30px;
+            box-shadow: 5px 5px 5px black;
+            /* overflow: hidden; */
+            background-color: rgb(236, 171, 171);
+            /* transform: skew(-10deg,-5deg); */
+       
+            /* transform: rotateY(50deg); */
+            /* background-color: rgb(30, 108, 145); 
+          */
+          /* background-image: url(phone.png);
+          background-repeat: no-repeat;
+          background-size: cover; */
+        }
+        .container img{
+            width: 100%;
+            position: absolute;
+            height: 100%;
+            /* z-index: 1; */
+        }
+        .card1,.card2{
+          box-shadow: 5px 5px 5px black;
+        /* position: absolute; */
+        /* z-index: 5; */
+        width: 70%;
+        position: relative;
+         padding: 10px;
+         /* border: 2px solid blue; */
+         
+      }
+      .phone {
+        position: absolute;
+        width: 90%;
+        height: 95%;
+        z-index: 0;
+        object-fit: cover;
+        display: flex;
+        z-index: 2;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        flex-direction: column;
+        overflow: scroll;
+        /* overflow-x: hidden; */
+            /* overflow-y: scroll; */
+            /* background-attachment:fixed; */
+            /* scroll-behavior: smooth; */
+      }
+      .border{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border: 20px solid black;
+        border-radius: 20px;
+        /* z-index: 4; */
+      }
+    
+
+.photo{
+    width: 20%;
+    min-width: 200px;
+    min-height: 350px;
+    height: 60%;
+    background-color: rgb(97, 17, 117);
+    background-image: url(my_photo.png);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    background-repeat: no-repeat;
+}
+.photo div:first-child{
+    position: absolute;
+    /* background-color: black; */
+    backdrop-filter: blur(10px);
+    width: 100px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    top: -20px;
+    right:30px;
+    height: 100px;
+    z-index: 10;
+    animation: move-h 5s alternate-reverse ease-in-out infinite;
+}
+.photo div:last-child{
+    position: absolute;
+    width: 100px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border:1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    bottom: -20px;
+    left:-20px;
+    height: 100px;
+    z-index: 10;
+    animation: move-h 5s alternate ease-in-out infinite;
+}
+.photo::before{
+    content: "";
+    position: absolute;
+    width: 60%;
+    background: none;
+    background-image: url(dot-removebg-preview.png);
+    /* background-image: 500px; */
+    background-repeat: no-repeat;
+    background-size: 120%;
+    /* background-color: azure; */
+    top: 50px;
+    left: -100px;
+    height: 50%;
+    animation: move-v 5s alternate-reverse ease-in-out infinite;
+    z-index: -1;
+
+}
+.photo::after{
+    content: "";
+    position: absolute;
+    width: 60%;
+    background: none;
+    background-image: url(dot-removebg-preview.png);
+    /* background-image: 500px; */
+    background-repeat: no-repeat;
+    background-size: 120%;
+    /* background-color: azure; */
+    bottom:  -50px;
+    z-index: -1;
+    right:  -100px;
+    height: 50%;
+   animation: move-v 5s alternate ease-in-out infinite;
+}
+@keyframes move-v{
+    100%{
+        transform: translateY(-100px);
+    }
+}
+@keyframes move-h{
+    100%{
+        transform: translateX(50px);
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- <img src="phone.png"> -->
+        <div class="border"></div>
+       <div><div class="phone">
+            <!-- <div class="card1"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum repellat fugit similique alias aliquam magnam labore nostrum soluta consequatur veritatis.</p></div>
+            <div class="card2"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, nemo veniam cupiditate optio reprehenderit mollitia incidunt quam illum nam consequatur!</p></div> -->
+            <div class="card1"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum repellat fugit similique alias aliquam magnam labore nostrum soluta consequatur veritatis.</p></div>
+            <div class="card2"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, nemo veniam cupiditate optio reprehenderit mollitia incidunt quam illum nam consequatur!</p></div>
+            <div class="card1"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum repellat fugit similique alias aliquam magnam labore nostrum soluta consequatur veritatis.</p></div>
+            <div class="card2"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, nemo veniam cupiditate optio reprehenderit mollitia incidunt quam illum nam consequatur!</p></div>
+       
+        </div></div>
+    </div>
+    <div class="photo">
+        <div></div> 
+        <div></div>
+</div>
+</body>
+</html>
