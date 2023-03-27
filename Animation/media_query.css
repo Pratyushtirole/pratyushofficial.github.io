@@ -1,0 +1,119 @@
+@media only screen and (max-width:700px){
+    /* .home {
+  background-size: 70% ;
+  background-position: bottom;
+    } */
+    .home ul{
+        display: none;
+    }
+  
+    .navigation-logo span{
+        font-size: 1.5rem;
+    }
+    .navigation-logo div{
+        width: 35px;
+        height: 35px;
+    }
+    .home-image{
+        width: 100%;
+        height: 120%;
+        
+        /* position: relative; */
+    }
+    #home-text{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        backdrop-filter: blur(3px);
+        border:2px solid black;
+        align-items: center;
+        justify-content: center;
+    }
+    .home-text{
+        transform: scale(0.75);
+    }
+    .aniline{
+        height: 3rem;
+    }
+    
+/* ------------------------------------------------------------------------------------------------------- */
+ 
+.tag {
+    font-size: 7em;
+}
+.tag-work{
+    font-size: 4em;
+
+}
+
+.about-content{
+   gap: 50px;
+}
+.about-line{
+    margin: 0 15px;
+}
+
+.content-list li label{
+    justify-content:start;
+}
+.bubble1::before{
+    width: 300px;
+    height: 300px;
+    top: 100px;
+}
+.content-list input[type="radio"]:checked + label + #sk{
+    min-height: 1150px;
+ }
+ .content-list input[type="radio"]:checked + label + #edu{
+    min-height: 1000px;
+ }
+ .content-list input[type="radio"]:checked + label + #exp{
+    min-height: 600px;
+ }
+ #edu div,#exp div,#sk .s{
+    max-width: 90%;
+ }
+ #sdiv div:not(.pro-gif){
+    width: calc(100%/2.5);
+ }
+ #sdiv h3{
+    font-size: 1em;
+ }
+    
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.work-line1{
+    margin: 230px auto 200px auto;
+}
+
+.work-column{
+    gap: 100px;
+}
+.work-content{
+    transform: scale(0.8);
+}
+.work-content:hover{
+    height: 200px;
+    width: 170px;
+}
+.work-content:hover .card-text{
+  width:150px;
+  height: 100px;
+  font-size: 15px;
+  /* transform: scale(0.7); */
+}
+.work-content:hover .card-icon{
+    width:170px;
+    height: 150px;
+    /* top:20px; */
+}
+
+.achivement h1{
+    font-size: 2rem;
+
+}
+footer{
+    font-size: small;
+}
+
+}

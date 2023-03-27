@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        *{
+            padding: 0;margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100vh;
+        }
+        .container{
+            height: 80%;
+            perspective: 15000000px;
+            width: 20%;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* z-index: 10; */
+            border-radius: 30px;
+            box-shadow: 5px 5px 5px black;
+            /* overflow: hidden; */
+            background-color: rgb(236, 171, 171);
+            transform: skew(-10deg,-5deg);
+       
+            /* transform: rotateY(50deg); */
+            /* background-color: rgb(30, 108, 145); 
+          */
+          /* background-image: url(phone.png);
+          background-repeat: no-repeat;
+          background-size: cover; */
+        }
+        .container img{
+            width: 100%;
+            position: absolute;
+            height: 100%;
+            z-index: 1;
+        }
+        .card1,.card2{
+          box-shadow: 5px 5px 5px black;
+        /* position: absolute; */
+        /* z-index: 5; */
+        width: 70%;
+         padding: 10px;
+         border: 2px solid blue;
+         
+      }
+      .phone {
+        position: absolute;
+        width: 90%;
+        height: 95%;
+        z-index: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow-x: hidden;
+            overflow-y: scroll;
+            background-attachment:local;
+            scroll-behavior: smooth;
+      }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="phone.png">
+        <div class="phone">
+            <div class="card1"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum repellat fugit similique alias aliquam magnam labore nostrum soluta consequatur veritatis.</p></div>
+            <div class="card2"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, nemo veniam cupiditate optio reprehenderit mollitia incidunt quam illum nam consequatur!</p></div>
+            <div class="card1"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum repellat fugit similique alias aliquam magnam labore nostrum soluta consequatur veritatis.</p></div>
+            <div class="card2"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, nemo veniam cupiditate optio reprehenderit mollitia incidunt quam illum nam consequatur!</p></div>
+            <div class="card1"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum repellat fugit similique alias aliquam magnam labore nostrum soluta consequatur veritatis.</p></div>
+            <div class="card2"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, nemo veniam cupiditate optio reprehenderit mollitia incidunt quam illum nam consequatur!</p></div>
+       
+        </div>
+    </div>
+</body>
+</html>
